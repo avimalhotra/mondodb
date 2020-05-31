@@ -16,9 +16,9 @@ var Car=new Schema({
 var mycar=mongoose.model("mycar",Car);
 
 var swift=new mycar({
-    name:"swift",
-    model:"zxi",
-    year:2018,
+    name:"Alto",
+    model:"lxi",
+    year:2019,
     available:true
  });
 
