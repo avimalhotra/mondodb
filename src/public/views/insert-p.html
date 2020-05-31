@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Hello</h1>
+    <nav>
+        {% include "nav.html" %}
+    </nav>
+    <section>
+       <h2>Insert Product</h2>
+       <form method="POST" action="/saveproduct">
+        
+        <table>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="price">Price</label></td>
+                <td><input type="text" id="price" name="price"></td>
+            </tr>
+            <tr>
+                <td><label for="type">Type</label></td>
+                <td><input type="text" id="type" name="type"></td>
+            </tr>
+            <tr>
+                <td><label for="capacity">Capacity</label></td>
+                <td><input type="text" id="capacity" name="capacity"></td>
+            </tr>
+            <tr>
+                <td><label for="available">Available</label></td>
+                <td><input type="text" id="available" name="available"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Send</button></td>
+            </tr>
+        </table>
+
+        </form>
+
+
+    </section>
+    </div>
+</body>
+</html>
